@@ -53,6 +53,6 @@ int main(){
             b[i][j] = t[i][j];
     }
 
-    NTL::LLL(_, b);
+    NTL::LLL(_, b, 99, 100);
     std::cout << b << std::endl << "norm = " << NTL::sqrt(NTL::to_RR(b[0] * b[0])) << std::endl;
 }
